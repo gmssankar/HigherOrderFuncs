@@ -1,0 +1,42 @@
+<script>
+var cars =[
+{name:"Toyata",color:"green",make:1998},
+{name:"Maruthi",color:"silver",make:2015},
+{name:"Hyundai",color:"silver",make:1997},
+{name:"Honda",color:"white",make:2005},
+{name:"Tata",color:"red",make:2014},
+];
+
+const newCars = cars.map(val => val.name+","+val.color+","+val.make);
+
+console.log(newCars);
+
+//filter by make
+
+const newCarsFilter = cars.filter(val => val.make > 2010);
+console.log(newCarsFilter);
+
+//https://jsfiddle.net/sshankara/r2f870j1/1/
+
+var cars =[
+{name:"Toyata",color:"green",make:1998},
+{name:"Maruthi",color:"silver",make:2015},
+{name:"Hyundai",color:"silver",make:1997},
+{name:"Honda",color:"white",make:2005},
+{name:"Tata",color:"red",make:2014},
+];
+
+const newCars = cars.map(val => val.name+","+val.color+","+val.make);
+
+console.log(newCars);
+
+//filter by make
+
+const newCarsFilter = cars.filter(val => val.make > 2010);
+console.log(newCarsFilter);
+
+var myAry =[1,2,3,4];
+
+const newAry = myAry.map(val => val+2);
+console.log(newAry);
+</script>

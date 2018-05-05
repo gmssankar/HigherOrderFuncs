@@ -1,0 +1,44 @@
+<script>
+var myData = [[1,2],[3,4],[5,6,7],[8]];
+
+//1. concatenate the idividual array elements
+var output = myData.reduce((acc,val) => acc.concat(val));
+
+console.log(output);
+
+//now output is [1, 2, 3, 4, 5, 6, 7]
+
+//2.display the sum of all the elements
+var sum= output.reduce((a,v) => a+=v);
+console.log(sum);
+
+//3.display the sum of all the elements with sum initial val supplied
+var sum= output.reduce((a,v) => a+=v,100);
+console.log(sum);
+
+//4.Find the average value
+const avg= output.reduce((acc,val,index,ary) =>
+{
+  acc += val;
+  if(index === ary.length-1)
+  {
+  return acc/ary.length;
+  }
+  else
+  return acc;
+});
+
+console.log("The average is",avg);
+
+var cars =[
+{name:"Toyata",color:"green",make:1998},
+{name:"Maruthi",color:"silver",make:2015},
+{name:"Hyundai",color:"silver",make:1997},
+{name:"Honda",color:"white",make:2005},
+{name:"Tata",color:"red",make:2015},
+];
+
+const newCars = cars.map(val => val.name+","+val.color+","+val.make);
+
+console.log(newCars);
+</script>
